@@ -1,17 +1,23 @@
+import useInputState from "../../Hooks/useInputState";
 
 
 const Hookform = () => {
 
+    // const [name, handleName] = useInputState('Kamrul')
+
+    const emailstate = useInputState('kamrulthedev@gmail.com');
+
     const handlerSubmit = e =>{
+        console.log('form data', emailstate.value)
      e.preventDefault();
     }
 
     return (
         <div>
              <form onSubmit={handlerSubmit}>
-                <input type="name" name="name" placeholder="Name"/>
+                {/* <input value={name} onChange={handleName} type="name" name="name" placeholder="Name"/> */}
                 <br />
-                <input type="email" name="email" placeholder="Email"/>
+                <input {...emailstate} type="email" name="email" placeholder="Email"/>
                 <br />
                 <input type="password" name="password" id="" placeholder="password" />
                 <br/>
