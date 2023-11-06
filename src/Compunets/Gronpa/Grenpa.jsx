@@ -3,7 +3,7 @@ import Ancle from "../Ancle/Ancle";
 import Antuy from "../Antuy/Antuy";
 import Dad from "../Dad/Dad";
 import './Grenpa.css'
-const AsstContect = createContext('gold')
+export const AsstContect = createContext('gold')
 
 
 const Grenpa = () => {
