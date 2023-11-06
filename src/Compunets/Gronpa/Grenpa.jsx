@@ -5,11 +5,14 @@ import './Grenpa.css'
 
 
 const Grenpa = () => {
+
+    const asst = 'Diamond';
+
     return (
         <div className="grenpa ">
             <h2>Grenpa</h2>
             <section className="flex">
-            <Dad></Dad>
+            <Dad asst={asst}></Dad>
             <Antuy></Antuy>
             <Ancle></Ancle>
             </section>

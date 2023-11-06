@@ -3,12 +3,12 @@ import MySlef from "../Mysaelf/MySlef";
 import Sister from "../Sister/Sister";
 
 
-const Dad = () => {
+const Dad = ({asst}) => {
     return (
         <div>
             <h2>Dad</h2>
            <section className="flex">
-            <MySlef></MySlef>
+            <MySlef Jinuk={asst}></MySlef>
             <Brother></Brother>
             <Sister></Sister>
            </section>
