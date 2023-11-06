@@ -1,6 +1,6 @@
 
 import './App.css'
-import ReuseForm from './Compunets/ResueForm/ReuseForm'
+// import ReuseForm from './Compunets/ResueForm/ReuseForm'
 // import Hookform from './Compunets/Hookform/Hookform'
 // import RefForm from './Compunets/RefForm/RefForm'
 // import SimpleFrom from './Compunets/SimpleFrom/SimpleFrom'
@@ -8,18 +8,43 @@ import ReuseForm from './Compunets/ResueForm/ReuseForm'
 
 function App() {
 
+ 
+
+  // const handlerSignUpSubmit = date =>{
+  //  console.log('Sign Up data', date)
+  // }
+  // const handlerUpdateSubmit = date =>{
+  //   console.log('Update Profile', date)
+  // }
+
 
   return (
     <>
    
 
-   <h1>Vite + React</h1>
+   <h1>Form Master</h1>
       {/* <SimpleFrom></SimpleFrom> */}
       {/* <StutefulForm></StutefulForm> */}
       {/* <RefForm></RefForm> */}
       {/* <Hookform></Hookform> */}
-      <ReuseForm SubmitForm={'Sign Up'} handlerbutton={'Submit'}></ReuseForm>
-      <ReuseForm SubmitForm={'Profile Update'} handlerbutton={'Update'}></ReuseForm>
+      {/* <ReuseForm 
+      handlerSubmit={handlerSignUpSubmit} 
+
+      SubmitForm={'Sign Up'} 
+      handlerbutton={'Submit'}>
+              <div>
+                <h2>Sign Up</h2>
+                <p>please sign up right now</p>
+              </div>
+      </ReuseForm>
+      <ReuseForm
+       handlerSubmit={handlerUpdateSubmit} 
+       SubmitForm={'Profile Update'} 
+       handlerbutton={'Update'}>
+        <div>
+          <h2>Update Profile</h2>
+        </div>
+       </ReuseForm> */}
    
     </>
   )

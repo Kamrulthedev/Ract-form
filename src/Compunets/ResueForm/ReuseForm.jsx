@@ -1,19 +1,24 @@
 
 
-const ReuseForm = ({SubmitForm, handlerbutton}) => {
+const ReuseForm = ({SubmitForm,handlerSubmit, handlerbutton, children}) => {
 
-
-    const handlerSubmit = e =>{
-      e.preventDefault();
-
+const handlerLocalsubmit = e =>{
+    e.preventDefault();
+    const date ={
+        name: e.target.value,
+        email: e.target.value,
+        password: e.target.value
     }
-
+    handlerSubmit(date);
+}
 
 
     return (
         <div>
-            <form onSubmit={handlerSubmit}>
-                <h2>{SubmitForm}</h2>
+          
+          {children}
+            <form onSubmit={handlerLocalsubmit}>
+              
                 <input type="name" name="name" placeholder="Name"/>
                 <br />
                 <input type="email" name="email" placeholder="Email"/>
