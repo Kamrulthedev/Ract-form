@@ -1,6 +1,7 @@
 
 import './App.css'
-import Hookform from './Compunets/Hookform/Hookform'
+import ReuseForm from './Compunets/ResueForm/ReuseForm'
+// import Hookform from './Compunets/Hookform/Hookform'
 // import RefForm from './Compunets/RefForm/RefForm'
 // import SimpleFrom from './Compunets/SimpleFrom/SimpleFrom'
 // import StutefulForm from './Compunets/StutedfulForm/StutefulForm'
@@ -16,7 +17,9 @@ function App() {
       {/* <SimpleFrom></SimpleFrom> */}
       {/* <StutefulForm></StutefulForm> */}
       {/* <RefForm></RefForm> */}
-      <Hookform></Hookform>
+      {/* <Hookform></Hookform> */}
+      <ReuseForm SubmitForm={'Sign Up'} handlerbutton={'Submit'}></ReuseForm>
+      <ReuseForm SubmitForm={'Profile Update'} handlerbutton={'Update'}></ReuseForm>
    
     </>
   )
