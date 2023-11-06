@@ -1,5 +1,6 @@
 
 import './App.css'
+import Grenpa from './Compunets/Gronpa/Grenpa'
 // import ReuseForm from './Compunets/ResueForm/ReuseForm'
 // import Hookform from './Compunets/Hookform/Hookform'
 // import RefForm from './Compunets/RefForm/RefForm'
@@ -23,6 +24,7 @@ function App() {
    
 
    <h1>Form Master</h1>
+   <Grenpa></Grenpa>
       {/* <SimpleFrom></SimpleFrom> */}
       {/* <StutefulForm></StutefulForm> */}
       {/* <RefForm></RefForm> */}
